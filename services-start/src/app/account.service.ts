@@ -16,7 +16,7 @@ export class AccountService {
   onAccountAdded(name: string, status: string) {
     this.accounts.push({ name: name, status: status });
   }
-  onAccountRemove() {}
+  onAccountRemove(index: number) {}
   onStatusChanged(id: number, status: string) {
     this.accounts[id].status = status;
   }
